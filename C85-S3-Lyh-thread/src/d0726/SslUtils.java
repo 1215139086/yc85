@@ -56,7 +56,7 @@ public class SslUtils {
 	        };  
 	        trustAllHttpsCertificates();  
 	        HttpsURLConnection.setDefaultHostnameVerifier(hv);  
-	    }  
+}  
 	}  
 
 

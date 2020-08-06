@@ -18,6 +18,6 @@ public class HelloServlet extends HttpServlet{
 		out.print("<h1>hello "+name+"</h1>");
 		
 		System.out.println("hello world!");
-	}
+}
 	
 }

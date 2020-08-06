@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+
+
+	<!-- 数据环境 -->
+	<environments default="development">
+		<environment id="development">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url"
+					value="jdbc:mysql://127.0.0.1/c85-s3-lyh-damai" />
+				<property name="username" value="root" />
+				<property name="password" value="a" />
+			</dataSource>
+		</environment>
+
+		<environment id="test">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url"
+					value="jdbc:mysql://127.0.0.1/c85-s3-lyh-damai" />
+				<property name="username" value="root" />
+				<property name="password" value="a" />
+			</dataSource>
+		</environment>
+
+		<environment id="produce">
+			<transactionManager type="JDBC" />
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url"
+					value="jdbc:mysql://127.0.0.1/c85-s3-lyh-damai" />
+				<property name="username" value="root" />
+				<property name="password" value="a" />
+			</dataSource>
+		</environment>
+
+	</environments>
+
+
+
+
+
+	
+
+
+	<!-- 映射文件配置 -->
+	<!-- 
+		org.apache.ibatis.binding.BindingException: 
+		Type interface com.yc.damai.dao.DmOrderitemMapper is not known to the MapperRegistry.
+		注册接口
+	 -->
+
+
+	<mappers>
+		<!-- xml + 注解的混合方案, 注册时使用xml配置注册 -->
+		<mapper resource="com/yc/web/dao/ProductMapper.xml" />
+		<!-- <mapper resource="com/yc/web/dao/CategoryMapper.xml" /> -->
+		<mapper resource="com/yc/web/dao/OrderitemMapper.xml" />
+		<!-- <mapper resource="com/yc/web/dao/OrdersMapper.xml" /> -->
+
+		<!-- 注册接口 存注解方式 (无xml) -->
+		<mapper class="com.yc.web.dao.DmOrdersMapper" />
+		<mapper class="com.yc.web.dao.DmCategoryMapper" />
+
+		<!-- 自动扫描包下的mapper接口 xml 也会被扫描到 -->
+		<!-- <package name="com.yc.web.dao"/> -->
+	</mappers>
+
+
+</configuration>

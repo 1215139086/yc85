@@ -35,7 +35,7 @@ public class HttpServletRequest {
 	 */
 	public String getMethod() {
 		return method;
-	}
+}
 
 	/**
 	 * 获取请求资源路径
@@ -43,7 +43,7 @@ public class HttpServletRequest {
 	 */
 	public String getRequestURI() {
 		return requestUri;
-	}
+}
 
 	/**
 	 * 获取协议版本
@@ -51,7 +51,7 @@ public class HttpServletRequest {
 	 */
 	public String getProtocol() {
 		return protocol;
-	}
+}
 
 	/**
 	 * 获取头域值 键值对
@@ -59,7 +59,7 @@ public class HttpServletRequest {
 	 */
 	public String getHeader(String name) {
 		return headerMap.get(name);
-	}
+}
 
 	/**
 	 * 获取请求参数
@@ -67,7 +67,7 @@ public class HttpServletRequest {
 	 */
 	public String getParameter(String name) {
 		return null;
-	}
+}
 
 	/**
 	 * 获取请求cookie数据
@@ -75,6 +75,6 @@ public class HttpServletRequest {
 	 */
 	public Cookie[] getCookies() {
 		return null;
-	}
+}
 
 }

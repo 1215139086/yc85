@@ -15,7 +15,7 @@ public class HttpServletResponse {
 	public HttpServletResponse(OutputStream out) {
 		this.out = out;
 	}
-	
+	 
 	// 资源流 字符串输出流,  将输出内容保存到一个字符串中
 	private CharArrayWriter caw = new CharArrayWriter();
 	// 处理流

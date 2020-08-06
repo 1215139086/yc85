@@ -30,26 +30,26 @@ public class HttpServlet implements Servlet {
 		response.setStatus(200, "OK");
 		response.flushBuffer();
 		
-	}
+}
 
 	public void doDelete(HttpServletRequest request, HttpServletResponse response) {
 		// TODO Auto-generated method stub
 
-	}
+}
 
 	public void doPut(HttpServletRequest request, HttpServletResponse response) {
 		// TODO Auto-generated method stub
 
-	}
+}
 
 	public void doPost(HttpServletRequest request, HttpServletResponse response) {
 		// TODO Auto-generated method stub
 
-	}
+}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response) {
 		// TODO Auto-generated method stub
 
-	}
+}
 
 }
