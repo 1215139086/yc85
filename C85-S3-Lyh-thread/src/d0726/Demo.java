@@ -17,7 +17,7 @@ public class Demo {
 	public static void main(String[] args) throws IOException,InterruptedException {
 
 		new Demo().download();
-	}
+	} 
 
 	// 定义下载方法
 	public void download() throws IOException,InterruptedException {

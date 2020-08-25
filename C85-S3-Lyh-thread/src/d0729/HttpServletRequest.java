@@ -21,7 +21,7 @@ public class HttpServletRequest {
 
 		for (int i = 1; i < lines.length; i++) {
 			lines[i] = lines[i].trim();
-			if (lines[i].isEmpty()) {
+			if (lines[i].isEmpty()) { 
 				break;
 			}
 			items = lines[i].split(":");

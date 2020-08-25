@@ -19,7 +19,7 @@ public class Tomcat {
 			Socket socket = tomcat.accept();
 
 			new Thread() {
-				public void run() {
+				public void run() { 
 					try {
 						System.out.println("接收到请求");
 						InputStream in = socket.getInputStream();

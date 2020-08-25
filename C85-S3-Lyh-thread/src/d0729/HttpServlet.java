@@ -18,7 +18,7 @@ public class HttpServlet implements Servlet {
 		if ("GET".equals(request.getMethod())) {
 			doGet(request, response);
 		} else if ("POST".equals(request.getMethod())) {
-			doPost(request, response);
+			doPost(request, response); 
 		} else if ("PUT".equals(request.getMethod())) {
 			doPut(request, response);
 		} else if ("DELETE".equals(request.getMethod())) {

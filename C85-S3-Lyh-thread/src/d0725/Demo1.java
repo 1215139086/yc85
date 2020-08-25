@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Demo1 {
 public static void main(String[] args) {
-	A a=new A("a·½·¨µÄÏß³Ì");
+	A a=new A("aï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½");
 	B b=new B();
-	Thread t=new Thread(b,"b·½·¨µÄÏß³Ì");
+	Thread t=new Thread(b,"bï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ß³ï¿½");
 	
 	a.start();
 	t.start();
@@ -17,13 +17,13 @@ public static void main(String[] args) {
 }
 	public static void a() {
 		Scanner sc=new Scanner(System.in);
-		System.out.println("ÇëÊäÈë:");
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:");
 		String s=sc.nextLine();
-		System.out.println("ÄãÊäÈëµÄÊÇ£º"+s);
+		System.out.println("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç£ï¿½"+s);
 		sc.close();
 	}
 	public static void b() {
-		System.out.println("ÕâÊÇb()·½·¨");
+		 System.out.println("ï¿½ï¿½ï¿½ï¿½b()ï¿½ï¿½ï¿½ï¿½");
 	}
 	
 	public static class A extends Thread{
@@ -41,7 +41,7 @@ public static void main(String[] args) {
 	
 	public static class B implements Runnable{
 		public void run() {
-			System.out.println("b()ÐÝÃß10Ãë");
+			System.out.println("b()ï¿½ï¿½ï¿½ï¿½10ï¿½ï¿½");
 			try {
 				Thread.sleep(10*1000);
 			}catch(InterruptedException e) {

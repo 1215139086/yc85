@@ -25,7 +25,7 @@ public class HttpServletResponse {
 	 * 获取响应输出流(打印流) 临时保存 servlet 输出的内容
 	 * @return
 	 */
-	public PrintWriter getWriter() {
+	public PrintWriter getWriter() { 
 		return pw;
 	}
 	
